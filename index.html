@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ONLINE MOVIE BOOKING</title>
+    <link rel="stylesheet" type="text/css" href="mainindex.css">
+</head>
+
+<body>
+    <center>
+        <a href="index.html"><img src="LOGO1.JPG" class="logo"> </a>
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="bookamovie.html">Book A movie</a>
+            <a href="aboutus.html">About Us</a>
+            <div class="sign">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </center>
+    <center>
+        <h2>
+            <p class="btmnav">Whether you are a self confessed movie buff or one of those who live cinema every day, if
+                the silver screen is religion to you and you want to catch all the latest movies in a theatre, then We
+                have made your life more convenient !!
+            </p>
+        </h2>
+    </center>
+    <!--SLIDE SHOW-->
+    <center>
+        <div class="slideshow">
+
+            <a href="mcapmarvel.html"> <img class="mySlides" src="capmarvel.png" style="width:990px;height: 330px"></a>
+            <a href="ww84.html"> <img class="mySlides" src="ww84.jpg" style="width:890px;height: 330px"></a>
+            <a href="furious.html"> <img class="mySlides" src="furious 9.jpg" style="width:890px;height: 330px"></a>
+            <a href="birdsofprey.html"> <img class="mySlides" src="Birdsofprey.jpg"
+                    style="width:890px;height: 330px"></a>
+            <a href="mshazam.html"><img class="mySlides" src="shazam.JPG" style="width:990px;height: 330px"></a><br>
+            <center><button class="w3-button w3-black w3-display-left"
+                    onclick="plusDivs(-1)">&#10094;</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button></center>
+        </div>
+    </center>
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <marquee>
+        <h1> FESTIVE SEASON OFFER ⬇ <br>
+
+            💥💥 BOOK 3 TICKETS AT PRICE 2 💥💥 </h1>
+    </marquee>
+    <div class="grid" style="text-align: center">
+        <div class="grid-item"><a href="dollitle.html"> <img src="Dollitle.jpg" height="350px" width="250px">
+                <figcaption><b>Dollitle</b></figcaption>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Our Rating:&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="bloodshot.html"><img src="Bloodshot.jpeg" height="350px" width="250px">
+                <figcaption>Bloodshot</figcaption>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Our Rating:&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="mulan.html"><img src="mulan.jpeg" height="350px" width="250px">
+                <figcaption>Mulan</figcaption>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Our Rating:&#11088;&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="furious.html"><img src="furious 9.jpg" height="350px" width="250px">
+                <figcaption>The Fate Of The Furious</figcaption>
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Our Rating:&#11088;&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="thegrudge.html"><img src="thegrudge.jpeg" height="350px" width="250px">
+                <figcaption>The Grudge</figcaption>
+            </a>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Our Rating:&#11088;&#11088;&#11088;
+        </div>
+        <div class="grid-item"><a href="ww84.html"><img src="ww84.jpg" height="350px" width="250px">
+                <figcaption>Wonder Woman - WW84</figcaption>
+            </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; Our Rating:&#11088;&#11088;&#11088;&#11088;
+        </div>
+    </div>
+
+</body>
+
+</html>
